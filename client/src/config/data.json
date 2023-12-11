@@ -1,0 +1,787 @@
+[
+    {
+        "no": 0,
+        "quiz": "When I'm in the store, I care more about ...",
+        "option":[
+            {"id" : 0, "text" : "a) the exact contents of the foods I purchase", "isChecked" : false},
+            {"id" : 1, "text" : "b) the price of the foods I purchase", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 1,
+        "quiz": "A significant chunk of my time is devoted to ...",
+        "option":[
+            {"id" : 0, "text" : "a) connecting with new people in various arenas", "isChecked" : false},
+            {"id" : 1, "text" : "b) investigating new projects/causes that I might get involved in.", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 2,
+        "quiz": "If I am late for a meeting, I normally focus more on ...",
+        "option":[
+            {"id" : 0, "text" : "a) whether I'll pay later if I over-stress now - so I try noth to rush too much", "isChecked" : false},
+            {"id" : 1, "text" : "b) hurrying, lest I unnecssarily waste more time for either of us.", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 3,
+        "quiz": "It's hard for me to understand how someone can ...",
+        "option":[
+            {"id" : 0, "text" : "a) find it hard to distinguish between what appeals to them and what does not", "isChecked" : false},
+            {"id" : 1, "text" : "b) totally miss the atomosphere in th room they just entered.", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+        ]
+    },
+    {
+        "no": 4,
+        "quiz": "It comes naturally to me to ...",
+        "option":[
+            {"id" : 0, "text" : "a) enroll others into whatever I am involved myself - I am quite good at that, actually", "isChecked" : false},
+            {"id" : 1, "text" : "b) engage totally-if I am in, it is never half-heartedly and I tend to get absorbed.", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 5,
+        "quiz": "I regularly set aside time so I am sure to ...",
+        "option":[
+            {"id" : 0, "text" : "a) exercise to increase strength and/or flexibility, so my body stays healthy", "isChecked" : false},
+            {"id" : 1, "text" : "b) clean and tidy up around my home, so it is kept neat", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 6,
+        "quiz": "I frequently neglect to ...",
+        "option":[
+            {"id" : 0, "text" : "a) take care of myself, as I have so much going on with people I know", "isChecked" : false},
+            {"id" : 1, "text" : "b) entertain my social connectins, on acount of taking care of myself", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 7,
+        "quiz": "More than a lot of other people.",
+        "option":[
+            {"id" : 0, "text" : "a) I am aware of food (type/regularity) and nutirtion", "isChecked" : false},
+            {"id" : 1, "text" : "b) I often see an element of competition and/or `conquering` in whatever I am doing ", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 8,
+        "quiz": "When I am offered something unfamiliar to eat, my primary consideration is ...",
+        "option":[
+            {"id" : 0, "text" : "a) how it will taste, and whether it will offer a novel or interesting experience.", "isChecked" : false},
+            {"id" : 1, "text" : "b) what ingredients it contains, and how they might affect my body/health", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 9,
+        "quiz": "My comfort zone is ...",
+        "option":[
+            {"id" : 0, "text" : "a) where I prfer to hang out most of the tie to recharge and stabilise", "isChecked" : false},
+            {"id" : 1, "text" : "b) the price of the foods I purchase", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 10,
+        "quiz": "When I'm in the store, I care more about ...",
+        "option":[
+            {"id" : 0, "text" : "a) the exact contents of the foods I purchase", "isChecked" : false},
+            {"id" : 1, "text" : "b) the price of the foods I purchase", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 11,
+        "quiz": "When I'm in the store, I care more about ...",
+        "option":[
+            {"id" : 0, "text" : "a) the exact contents of the foods I purchase", "isChecked" : false},
+            {"id" : 1, "text" : "b) the price of the foods I purchase", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 12,
+        "quiz": "When I'm in the store, I care more about ...",
+        "option":[
+            {"id" : 0, "text" : "a) the exact contents of the foods I purchase", "isChecked" : false},
+            {"id" : 1, "text" : "b) the price of the foods I purchase", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 13,
+        "quiz": "When I'm in the store, I care more about ...",
+        "option":[
+            {"id" : 0, "text" : "a) the exact contents of the foods I purchase", "isChecked" : false},
+            {"id" : 1, "text" : "b) the price of the foods I purchase", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 14,
+        "quiz": "When I'm in the store, I care more about ...",
+        "option":[
+            {"id" : 0, "text" : "a) the exact contents of the foods I purchase", "isChecked" : false},
+            {"id" : 1, "text" : "b) the price of the foods I purchase", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 15,
+        "quiz": "When I'm in the store, I care more about ...",
+        "option":[
+            {"id" : 0, "text" : "a) the exact contents of the foods I purchase", "isChecked" : false},
+            {"id" : 1, "text" : "b) the price of the foods I purchase", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 16,
+        "quiz": "When I'm in the store, I care more about ...",
+        "option":[
+            {"id" : 0, "text" : "a) the exact contents of the foods I purchase", "isChecked" : false},
+            {"id" : 1, "text" : "b) the price of the foods I purchase", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 17,
+        "quiz": "When I'm in the store, I care more about ...",
+        "option":[
+            {"id" : 0, "text" : "a) the exact contents of the foods I purchase", "isChecked" : false},
+            {"id" : 1, "text" : "b) the price of the foods I purchase", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 18,
+        "quiz": "When I'm in the store, I care more about ...",
+        "option":[
+            {"id" : 0, "text" : "a) the exact contents of the foods I purchase", "isChecked" : false},
+            {"id" : 1, "text" : "b) the price of the foods I purchase", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 19,
+        "quiz": "A significant chunk of my time is devoted to ...",
+        "option":[
+            {"id" : 0, "text" : "a) connecting with new people in various arenas", "isChecked" : false},
+            {"id" : 1, "text" : "b) investigating new projects/causes that I might get involved in.", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 20,
+        "quiz": "If I am late for a meeting, I normally focus more on ...",
+        "option":[
+            {"id" : 0, "text" : "a) whether I'll pay later if I over-stress now - so I try noth to rush too much", "isChecked" : false},
+            {"id" : 1, "text" : "b) hurrying, lest I unnecssarily waste more time for either of us.", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 21,
+        "quiz": "It's hard for me to understand how someone can ...",
+        "option":[
+            {"id" : 0, "text" : "a) find it hard to distinguish between what appeals to them and what does not", "isChecked" : false},
+            {"id" : 1, "text" : "b) totally miss the atomosphere in th room they just entered.", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+        ]
+    },
+    {
+        "no": 22,
+        "quiz": "It comes naturally to me to ...",
+        "option":[
+            {"id" : 0, "text" : "a) enroll others into whatever I am involved myself - I am quite good at that, actually", "isChecked" : false},
+            {"id" : 1, "text" : "b) engage totally-if I am in, it is never half-heartedly and I tend to get absorbed.", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 23,
+        "quiz": "I regularly set aside time so I am sure to ...",
+        "option":[
+            {"id" : 0, "text" : "a) exercise to increase strength and/or flexibility, so my body stays healthy", "isChecked" : false},
+            {"id" : 1, "text" : "b) clean and tidy up around my home, so it is kept neat", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 24,
+        "quiz": "I frequently neglect to ...",
+        "option":[
+            {"id" : 0, "text" : "a) take care of myself, as I have so much going on with people I know", "isChecked" : false},
+            {"id" : 1, "text" : "b) entertain my social connectins, on acount of taking care of myself", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 25,
+        "quiz": "More than a lot of other people.",
+        "option":[
+            {"id" : 0, "text" : "a) I am aware of food (type/regularity) and nutirtion", "isChecked" : false},
+            {"id" : 1, "text" : "b) I often see an element of competition and/or `conquering` in whatever I am doing ", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 26,
+        "quiz": "When I am offered something unfamiliar to eat, my primary consideration is ...",
+        "option":[
+            {"id" : 0, "text" : "a) how it will taste, and whether it will offer a novel or interesting experience.", "isChecked" : false},
+            {"id" : 1, "text" : "b) what ingredients it contains, and how they might affect my body/health", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 27,
+        "quiz": "When I'm in the store, I care more about ...",
+        "option":[
+            {"id" : 0, "text" : "a) the exact contents of the foods I purchase", "isChecked" : false},
+            {"id" : 1, "text" : "b) the price of the foods I purchase", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 28,
+        "quiz": "A significant chunk of my time is devoted to ...",
+        "option":[
+            {"id" : 0, "text" : "a) connecting with new people in various arenas", "isChecked" : false},
+            {"id" : 1, "text" : "b) investigating new projects/causes that I might get involved in.", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 29,
+        "quiz": "If I am late for a meeting, I normally focus more on ...",
+        "option":[
+            {"id" : 0, "text" : "a) whether I'll pay later if I over-stress now - so I try noth to rush too much", "isChecked" : false},
+            {"id" : 1, "text" : "b) hurrying, lest I unnecssarily waste more time for either of us.", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 30,
+        "quiz": "It's hard for me to understand how someone can ...",
+        "option":[
+            {"id" : 0, "text" : "a) find it hard to distinguish between what appeals to them and what does not", "isChecked" : false},
+            {"id" : 1, "text" : "b) totally miss the atomosphere in th room they just entered.", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+        ]
+    },
+    {
+        "no": 31,
+        "quiz": "It comes naturally to me to ...",
+        "option":[
+            {"id" : 0, "text" : "a) enroll others into whatever I am involved myself - I am quite good at that, actually", "isChecked" : false},
+            {"id" : 1, "text" : "b) engage totally-if I am in, it is never half-heartedly and I tend to get absorbed.", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 32,
+        "quiz": "I regularly set aside time so I am sure to ...",
+        "option":[
+            {"id" : 0, "text" : "a) exercise to increase strength and/or flexibility, so my body stays healthy", "isChecked" : false},
+            {"id" : 1, "text" : "b) clean and tidy up around my home, so it is kept neat", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 33,
+        "quiz": "I frequently neglect to ...",
+        "option":[
+            {"id" : 0, "text" : "a) take care of myself, as I have so much going on with people I know", "isChecked" : false},
+            {"id" : 1, "text" : "b) entertain my social connectins, on acount of taking care of myself", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 34,
+        "quiz": "More than a lot of other people.",
+        "option":[
+            {"id" : 0, "text" : "a) I am aware of food (type/regularity) and nutirtion", "isChecked" : false},
+            {"id" : 1, "text" : "b) I often see an element of competition and/or `conquering` in whatever I am doing ", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 35,
+        "quiz": "When I am offered something unfamiliar to eat, my primary consideration is ...",
+        "option":[
+            {"id" : 0, "text" : "a) how it will taste, and whether it will offer a novel or interesting experience.", "isChecked" : false},
+            {"id" : 1, "text" : "b) what ingredients it contains, and how they might affect my body/health", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 36,
+        "quiz": "When I'm in the store, I care more about ...",
+        "option":[
+            {"id" : 0, "text" : "a) the exact contents of the foods I purchase", "isChecked" : false},
+            {"id" : 1, "text" : "b) the price of the foods I purchase", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 37,
+        "quiz": "A significant chunk of my time is devoted to ...",
+        "option":[
+            {"id" : 0, "text" : "a) connecting with new people in various arenas", "isChecked" : false},
+            {"id" : 1, "text" : "b) investigating new projects/causes that I might get involved in.", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 38,
+        "quiz": "If I am late for a meeting, I normally focus more on ...",
+        "option":[
+            {"id" : 0, "text" : "a) whether I'll pay later if I over-stress now - so I try noth to rush too much", "isChecked" : false},
+            {"id" : 1, "text" : "b) hurrying, lest I unnecssarily waste more time for either of us.", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 39,
+        "quiz": "It's hard for me to understand how someone can ...",
+        "option":[
+            {"id" : 0, "text" : "a) find it hard to distinguish between what appeals to them and what does not", "isChecked" : false},
+            {"id" : 1, "text" : "b) totally miss the atomosphere in th room they just entered.", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+        ]
+    },
+    {
+        "no": 40,
+        "quiz": "It comes naturally to me to ...",
+        "option":[
+            {"id" : 0, "text" : "a) enroll others into whatever I am involved myself - I am quite good at that, actually", "isChecked" : false},
+            {"id" : 1, "text" : "b) engage totally-if I am in, it is never half-heartedly and I tend to get absorbed.", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 41,
+        "quiz": "I regularly set aside time so I am sure to ...",
+        "option":[
+            {"id" : 0, "text" : "a) exercise to increase strength and/or flexibility, so my body stays healthy", "isChecked" : false},
+            {"id" : 1, "text" : "b) clean and tidy up around my home, so it is kept neat", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 42,
+        "quiz": "I frequently neglect to ...",
+        "option":[
+            {"id" : 0, "text" : "a) take care of myself, as I have so much going on with people I know", "isChecked" : false},
+            {"id" : 1, "text" : "b) entertain my social connectins, on acount of taking care of myself", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 43,
+        "quiz": "More than a lot of other people.",
+        "option":[
+            {"id" : 0, "text" : "a) I am aware of food (type/regularity) and nutirtion", "isChecked" : false},
+            {"id" : 1, "text" : "b) I often see an element of competition and/or `conquering` in whatever I am doing ", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 44,
+        "quiz": "When I am offered something unfamiliar to eat, my primary consideration is ...",
+        "option":[
+            {"id" : 0, "text" : "a) how it will taste, and whether it will offer a novel or interesting experience.", "isChecked" : false},
+            {"id" : 1, "text" : "b) what ingredients it contains, and how they might affect my body/health", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 45,
+        "quiz": "When I'm in the store, I care more about ...",
+        "option":[
+            {"id" : 0, "text" : "a) the exact contents of the foods I purchase", "isChecked" : false},
+            {"id" : 1, "text" : "b) the price of the foods I purchase", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 46,
+        "quiz": "A significant chunk of my time is devoted to ...",
+        "option":[
+            {"id" : 0, "text" : "a) connecting with new people in various arenas", "isChecked" : false},
+            {"id" : 1, "text" : "b) investigating new projects/causes that I might get involved in.", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 47,
+        "quiz": "If I am late for a meeting, I normally focus more on ...",
+        "option":[
+            {"id" : 0, "text" : "a) whether I'll pay later if I over-stress now - so I try noth to rush too much", "isChecked" : false},
+            {"id" : 1, "text" : "b) hurrying, lest I unnecssarily waste more time for either of us.", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 48,
+        "quiz": "It's hard for me to understand how someone can ...",
+        "option":[
+            {"id" : 0, "text" : "a) find it hard to distinguish between what appeals to them and what does not", "isChecked" : false},
+            {"id" : 1, "text" : "b) totally miss the atomosphere in th room they just entered.", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+        ]
+    },
+    {
+        "no": 49,
+        "quiz": "It comes naturally to me to ...",
+        "option":[
+            {"id" : 0, "text" : "a) enroll others into whatever I am involved myself - I am quite good at that, actually", "isChecked" : false},
+            {"id" : 1, "text" : "b) engage totally-if I am in, it is never half-heartedly and I tend to get absorbed.", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 50,
+        "quiz": "I regularly set aside time so I am sure to ...",
+        "option":[
+            {"id" : 0, "text" : "a) exercise to increase strength and/or flexibility, so my body stays healthy", "isChecked" : false},
+            {"id" : 1, "text" : "b) clean and tidy up around my home, so it is kept neat", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 51,
+        "quiz": "I frequently neglect to ...",
+        "option":[
+            {"id" : 0, "text" : "a) take care of myself, as I have so much going on with people I know", "isChecked" : false},
+            {"id" : 1, "text" : "b) entertain my social connectins, on acount of taking care of myself", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 52,
+        "quiz": "More than a lot of other people.",
+        "option":[
+            {"id" : 0, "text" : "a) I am aware of food (type/regularity) and nutirtion", "isChecked" : false},
+            {"id" : 1, "text" : "b) I often see an element of competition and/or `conquering` in whatever I am doing ", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 53,
+        "quiz": "When I am offered something unfamiliar to eat, my primary consideration is ...",
+        "option":[
+            {"id" : 0, "text" : "a) how it will taste, and whether it will offer a novel or interesting experience.", "isChecked" : false},
+            {"id" : 1, "text" : "b) what ingredients it contains, and how they might affect my body/health", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 54,
+        "quiz": "When I'm in the store, I care more about ...",
+        "option":[
+            {"id" : 0, "text" : "a) the exact contents of the foods I purchase", "isChecked" : false},
+            {"id" : 1, "text" : "b) the price of the foods I purchase", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 55,
+        "quiz": "A significant chunk of my time is devoted to ...",
+        "option":[
+            {"id" : 0, "text" : "a) connecting with new people in various arenas", "isChecked" : false},
+            {"id" : 1, "text" : "b) investigating new projects/causes that I might get involved in.", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 56,
+        "quiz": "If I am late for a meeting, I normally focus more on ...",
+        "option":[
+            {"id" : 0, "text" : "a) whether I'll pay later if I over-stress now - so I try noth to rush too much", "isChecked" : false},
+            {"id" : 1, "text" : "b) hurrying, lest I unnecssarily waste more time for either of us.", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 57,
+        "quiz": "It's hard for me to understand how someone can ...",
+        "option":[
+            {"id" : 0, "text" : "a) find it hard to distinguish between what appeals to them and what does not", "isChecked" : false},
+            {"id" : 1, "text" : "b) totally miss the atomosphere in th room they just entered.", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+        ]
+    },
+    {
+        "no": 58,
+        "quiz": "It comes naturally to me to ...",
+        "option":[
+            {"id" : 0, "text" : "a) enroll others into whatever I am involved myself - I am quite good at that, actually", "isChecked" : false},
+            {"id" : 1, "text" : "b) engage totally-if I am in, it is never half-heartedly and I tend to get absorbed.", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 59,
+        "quiz": "I regularly set aside time so I am sure to ...",
+        "option":[
+            {"id" : 0, "text" : "a) exercise to increase strength and/or flexibility, so my body stays healthy", "isChecked" : false},
+            {"id" : 1, "text" : "b) clean and tidy up around my home, so it is kept neat", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 60,
+        "quiz": "I frequently neglect to ...",
+        "option":[
+            {"id" : 0, "text" : "a) take care of myself, as I have so much going on with people I know", "isChecked" : false},
+            {"id" : 1, "text" : "b) entertain my social connectins, on acount of taking care of myself", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 61,
+        "quiz": "More than a lot of other people.",
+        "option":[
+            {"id" : 0, "text" : "a) I am aware of food (type/regularity) and nutirtion", "isChecked" : false},
+            {"id" : 1, "text" : "b) I often see an element of competition and/or `conquering` in whatever I am doing ", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 62,
+        "quiz": "When I am offered something unfamiliar to eat, my primary consideration is ...",
+        "option":[
+            {"id" : 0, "text" : "a) how it will taste, and whether it will offer a novel or interesting experience.", "isChecked" : false},
+            {"id" : 1, "text" : "b) what ingredients it contains, and how they might affect my body/health", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 63,
+        "quiz": "When I'm in the store, I care more about ...",
+        "option":[
+            {"id" : 0, "text" : "a) the exact contents of the foods I purchase", "isChecked" : false},
+            {"id" : 1, "text" : "b) the price of the foods I purchase", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 64,
+        "quiz": "A significant chunk of my time is devoted to ...",
+        "option":[
+            {"id" : 0, "text" : "a) connecting with new people in various arenas", "isChecked" : false},
+            {"id" : 1, "text" : "b) investigating new projects/causes that I might get involved in.", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 65,
+        "quiz": "If I am late for a meeting, I normally focus more on ...",
+        "option":[
+            {"id" : 0, "text" : "a) whether I'll pay later if I over-stress now - so I try noth to rush too much", "isChecked" : false},
+            {"id" : 1, "text" : "b) hurrying, lest I unnecssarily waste more time for either of us.", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 66,
+        "quiz": "It's hard for me to understand how someone can ...",
+        "option":[
+            {"id" : 0, "text" : "a) find it hard to distinguish between what appeals to them and what does not", "isChecked" : false},
+            {"id" : 1, "text" : "b) totally miss the atomosphere in th room they just entered.", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+        ]
+    },
+    {
+        "no": 67,
+        "quiz": "It comes naturally to me to ...",
+        "option":[
+            {"id" : 0, "text" : "a) enroll others into whatever I am involved myself - I am quite good at that, actually", "isChecked" : false},
+            {"id" : 1, "text" : "b) engage totally-if I am in, it is never half-heartedly and I tend to get absorbed.", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 68,
+        "quiz": "I regularly set aside time so I am sure to ...",
+        "option":[
+            {"id" : 0, "text" : "a) exercise to increase strength and/or flexibility, so my body stays healthy", "isChecked" : false},
+            {"id" : 1, "text" : "b) clean and tidy up around my home, so it is kept neat", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 69,
+        "quiz": "I frequently neglect to ...",
+        "option":[
+            {"id" : 0, "text" : "a) take care of myself, as I have so much going on with people I know", "isChecked" : false},
+            {"id" : 1, "text" : "b) entertain my social connectins, on acount of taking care of myself", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 70,
+        "quiz": "More than a lot of other people.",
+        "option":[
+            {"id" : 0, "text" : "a) I am aware of food (type/regularity) and nutirtion", "isChecked" : false},
+            {"id" : 1, "text" : "b) I often see an element of competition and/or `conquering` in whatever I am doing ", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    },
+    {
+        "no": 71,
+        "quiz": "When I am offered something unfamiliar to eat, my primary consideration is ...",
+        "option":[
+            {"id" : 0, "text" : "a) how it will taste, and whether it will offer a novel or interesting experience.", "isChecked" : false},
+            {"id" : 1, "text" : "b) what ingredients it contains, and how they might affect my body/health", "isChecked" : false},
+            {"id ": 2, "text" : "Higher", "isChecked" : false},
+            {"id" : 3, "text" : "Lower", "isChecked" : false}
+
+        ]
+    }
+]
