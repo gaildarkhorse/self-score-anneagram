@@ -1,4 +1,4 @@
-//Copyright (c) 2022 Panshak Solomon
+//Copyright (c) 2022 darkhorse Solomon
 
 import React from 'react';
 import ReactDOM from 'react-dom';

@@ -2,19 +2,17 @@ import React, { useState } from 'react'
 import Field from './Field'
 import useStyles from './styles'
 import styles from './Login.module.css'
-import {GoogleLogin, GoogleOAuthProvider} from '@react-oauth/google'
-import jwtDecode from 'jwt-decode'
+//import {GoogleLogin, GoogleOAuthProvider} from '@react-oauth/google'
+//import jwtDecode from 'jwt-decode'
 import {useDispatch} from 'react-redux'
 import { useHistory, Link } from 'react-router-dom'
 import { signup, signin } from '../../actions/auth'
 import { Avatar, Button, Paper, Grid, Typography, Container } from '@material-ui/core'
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined'
-import { createProfile } from '../../actions/profile'
+//import { createProfile } from '../../actions/profile'
 import { useSnackbar } from 'react-simple-snackbar'
 import CircularProgress from '@material-ui/core/CircularProgress';
-
-
-import { REACT_APP_GOOGLE_CLIENT_ID } from '../../config/constants'
+//import { REACT_APP_GOOGLE_CLIENT_ID } from '../../config/constants'
 
 const initialState ={ firstName: '', lastName: '', email: '', password: '', confirmPassword: '', profilePicture: '', bio: ''}
 
@@ -51,24 +49,24 @@ const Login = () => {
         setIsSignup((prevState) => !prevState)
     }
 
-    const googleSuccess = async (res) => {
-        const result = jwtDecode(res.credential);
-        const token = res?.credential;
-        dispatch(createProfile({name: result?.name, email: result?.email, userId: result?.jti, phoneNumber: '', businessName: '', contactAddress: '', logo: result?.picture, website: ''}))
+    // const googleSuccess = async (res) => {
+    //     const result = jwtDecode(res.credential);
+    //     const token = res?.credential;
+    //     dispatch(createProfile({name: result?.name, email: result?.email, userId: result?.jti, phoneNumber: '', businessName: '', contactAddress: '', logo: result?.picture, website: ''}))
 
-        try {
-            dispatch({ type: "AUTH", data: {result, token}})
+    //     try {
+    //         dispatch({ type: "AUTH", data: {result, token}})
 
-            window.location.href='/dashboard'
+    //         window.location.href='/dashboard'
             
-        } catch (error) {
-            console.log(error)
-        }
-    }
-    const googleError =(error) => {
-        console.log(error)
-        console.log("Google Sign In was unseccassful. Try again later")
-    }
+    //     } catch (error) {
+    //         console.log(error)
+    //     }
+    // }
+    // const googleError =(error) => {
+    //     console.log(error)
+    //     console.log("Google Sign In was unseccassful. Try again later")
+    // }
 
 
     if(user) {
@@ -107,9 +105,8 @@ const Login = () => {
                 <div className={styles.option}>
                   <span>or</span>
                 </div>
-                <div> 
+                {/*<div> 
                   <GoogleOAuthProvider clientId={REACT_APP_GOOGLE_CLIENT_ID}>
-                  {/* <GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}> */}
                     <GoogleLogin
                       onSuccess={googleSuccess}
                       onError={googleError}
@@ -119,7 +116,7 @@ const Login = () => {
                       state_cookie_domain='single_host_origin'
                     />
                   </GoogleOAuthProvider>
-                </div>
+                  </div>*/}
           </div>
           <Grid container justifyContent="flex-end">
             <Grid item>

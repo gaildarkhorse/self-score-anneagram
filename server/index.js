@@ -53,7 +53,7 @@ const transporter = nodemailer.createTransport({
 var options = { format: 'A4' };
 //SEND PDF INVOICE VIA EMAIL
 app.post('/send-pdf', (req, res) => {
-    pdf.create(pdfTemplate(req.body), {}).toFile('invoice.pdf', (err) => {
+    pdf.create(pdfTemplate(req.body), options).toFile('invoice.pdf', (err) => {
         if (err) {
             res.send(Promise.reject());
         }
@@ -66,10 +66,10 @@ app.post('/send-pdf', (req, res) => {
         subject: 'Report from ',
         text: 'hello',
         // html: req.body,
-        // attachments: [{
-        //     filename: 'invoice.pdf',
-        //     path: `${__dirname}/invoice.pdf`
-        // }]
+        attachments: [{
+            filename: 'invoice.pdf',
+            path: `${__dirname}/invoice.pdf`
+        }]
     };
     console.log('>>> mail option setting succeed')
     

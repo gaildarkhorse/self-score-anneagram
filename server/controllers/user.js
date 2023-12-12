@@ -44,6 +44,7 @@ export const signup = async (req, res)=> {
     const { email, password, confirmPassword, firstName, lastName, bio } = req.body
     console.log("------------------------------------------------------------------")
     try {
+        console.log((">>> I am in try catch"));
         const existingUser = await User.findOne({ email })
         const userProfile = await ProfileModel.findOne({ userId: existingUser?._id })
 
@@ -60,6 +61,7 @@ export const signup = async (req, res)=> {
         res.status(200).json({ result, userProfile, token })
 
     } catch (error) {
+        console.log(">>> unknown error is about to occure");
         res.status(500).json({ message: "Something went wrong"}) 
     }
 }

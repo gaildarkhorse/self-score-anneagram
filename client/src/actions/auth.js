@@ -26,6 +26,7 @@ export const signup =(formData, openSnackbar, setLoading) => async(dispatch) => 
 
     try {
         //Sign up the user
+        console.log('>>> here - signup !!!');
         const { data } = await api.signUp(formData)
         dispatch({ type: AUTH, data})
         
