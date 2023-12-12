@@ -89,9 +89,9 @@ const QuestionBoard = () => {
     }
     return (
         <div>
-            {data.map((question) => {
+            {data.map((question, index) => {
                 return (
-                    <div className="quiz-item">
+                    <div className="quiz-item" key={index}>
                         <div className="quiz-item-main">
                             <h3>
                                 <img src={questionImg} width="30px" height="30px" alt="Q. "></img>

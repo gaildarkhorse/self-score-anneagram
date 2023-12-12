@@ -36,7 +36,7 @@ export default function ProfileDetail({ profiles }) {
     </div>
         <List className={classes.root}>
           <ListItem >
-                <BusinessCenterIcon style={{marginRight: '20px', color: 'gray'}} />
+            <BusinessCenterIcon style={{marginRight: '20px', color: 'gray'}} />
             <ListItemText primary={profiles?.businessName} secondary="" />
           </ListItem>
 

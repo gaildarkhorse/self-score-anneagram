@@ -25,6 +25,7 @@ const ClientList = () => {
   const user = JSON.parse(localStorage.getItem('profile'))
   const { clients } = useSelector((state) => state.clients)
   const isLoading = useSelector(state => state.clients.isLoading)
+
   useEffect(() => {
     dispatch(getClientsByUser({ search: user?.result?._id || user.result.googleId }));
   }, [location, dispatch])

@@ -341,29 +341,29 @@ const Invoice = () => {
                 </div>
                 <Divider />
                 <div>
-                    <div class = "font-extrabold fixed bottom-20 right-10 ">
-                        <div class = {`p-5  ${totalCount >= 72 ? "bg-green-500" : "bg-blue-500" } text-white rounded-full border-2`}>
+                    <div className = "font-extrabold fixed bottom-20 right-10 ">
+                        <div className = {`p-5  ${totalCount >= 72 ? "bg-green-500" : "bg-blue-500" } text-white rounded-full border-2`}>
                             Total Count: {totalCount}
                         </div>
-                        <div class = {` p-5 ${ limitCount>= 1? (limitCount>= 5? "bg-red-500":"bg-blue-500") :"bg-green-500" } text-white rounded-full border-2 `}>
+                        <div className = {` p-5 ${ limitCount>= 1? (limitCount>= 5? "bg-red-500":"bg-blue-500") :"bg-green-500" } text-white rounded-full border-2 `}>
                             Limit Count: {limitCount}
                         </div>
                     </div>
-                    <p class = "font-extrabold m-5 "><center>Choose the statement of each pair that best descripbes you.</center></p>
+                    <p className = "font-extrabold m-5 "><center>Choose the statement of each pair that best descripbes you.</center></p>
                     <Divider />
                     
-                    {data.map((question) => {
+                    {data.map((question, index) => {
                         return (
-                            <center>
-                                <div class="grid grid-flow-row-dense grid-cols-8 grid-rows-4">
-                                    <div class="text-left pl-20 m-1 col-span-8 row-span-1 font-bold">
+                            <center key={index}>
+                                <div className="grid grid-flow-row-dense grid-cols-8 grid-rows-4">
+                                    <div className="text-left pl-20 m-1 col-span-8 row-span-1 font-bold">
                                         {question.no + 1}: {question.quiz}
                                     </div>
                                     {/* Option 1: */}
-                                    <div class="text-left pl-24 m-1 col-span-5  hover:bg-blue-200" onClick={() => optionClickOne(question)} key={question.option.id}>
+                                    <div className="text-left pl-24 m-1 col-span-5  hover:bg-blue-200" onClick={() => optionClickOne(question)} key={question.option.id}>
                                         {question.option[0].text}
                                     </div>
-                                    <div class="col-span-1">
+                                    <div className="col-span-1">
                                         {
                                             (quizState[question.no] === 1) &&
                                             <img src={checkImg} width="20px" height="20px" alt="img2" />
@@ -371,7 +371,7 @@ const Invoice = () => {
                                     </div>
                                     
                                     {/* Option 3:*/}
-                                    <div class="m-1  hover:bg-blue-200" onClick={() => optionClickThree(question)} key={question.option.id}>
+                                    <div className="m-1  hover:bg-blue-200" onClick={() => optionClickThree(question)} key={question.option.id}>
                                         {question.option[2].text}
                                     </div>
                                     <div>
@@ -381,7 +381,7 @@ const Invoice = () => {
                                         }
                                     </div>
                                     {/* Option 2: */}
-                                    <div class="text-left pl-24 m-1 col-span-5  hover:bg-blue-200" onClick={() => optionClickTwo(question)} key={question.option.id}>
+                                    <div className="text-left pl-24 m-1 col-span-5  hover:bg-blue-200" onClick={() => optionClickTwo(question)} key={question.option.id}>
                                         {question.option[1].text}
                                         
                                     </div>
