@@ -1,4 +1,4 @@
-### [accountill.com](https://accountill.com/)
+### [self-score]
 # MERN Stack Invoicing Application
 Built with the MERN stack (MongoDB, Express, React and NodeJS).
 ![Invoice](https://res.cloudinary.com/almpo/image/upload/v1637311386/invoice/invoice-app_tcz0dj.png)
@@ -169,12 +169,7 @@ to keep improving the project.
 
 
 ## Author
-
-- Twitter: [@darkhorse_](https://twitter.com/darkhorse_)
-- Github: [@darkhorse](https://github.com/darkhorse)
-- Linkedin: [@darkhorse](https://www.linkedin.com/in/darkhorse/)
-- Email: [@idarkhorse](mailto:idarkhorse@gmail.com)
+darkhorse
 
 ## License
-
-- This project is [MIT](https://github.com/darkhorse/accountill/blob/master/LICENSE.md) licensed.
+- This project is [MIT]licensed.
