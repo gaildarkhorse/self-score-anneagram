@@ -23,6 +23,8 @@ import pdfTemplate from './documents/index.js'
 import { SMTP_PASS, SMTP_HOST, SMTP_USER, SMTP_PORT, EMAIL_FROM, EMAIL_TO } from './config/constants.js'
 import { DB_URL, PORT } from './config/constants.js'
 
+import Conversion from "phantom-html-to-pdf"
+const conversion = Conversion();
 const app = express()
 //dotenv.config()
 
@@ -35,67 +37,85 @@ app.use('/clients', clientRoutes)
 app.use('/users', userRoutes)
 app.use('/profiles', profile)
 
+
 // NODEMAILER TRANSPORT FOR SENDING INVOICE VIA EMAIL
 const transporter = nodemailer.createTransport({
     service: 'gmail',
-    host: SMTP_HOST,
-    port: SMTP_PORT,
+    host: "smtp.gmail.com",
+    port: 465,
     secure: true,
     auth: {
         user: SMTP_USER,
         pass: SMTP_PASS,
     },
-    
+    // tls:{
+    //     minVersion: 'TLSv1.3',
+    // }
 })
 
-
-
-var options = { format: 'A4' };
+var options = { format: 'A3' };
 //SEND PDF INVOICE VIA EMAIL
 app.post('/send-pdf', (req, res) => {
-    pdf.create(pdfTemplate(req.body), options).toFile('invoice.pdf', (err) => {
+    pdf.create(pdfTemplate(req.body), options).toFile('report.pdf', (err) => {
         if (err) {
+            console.log('>>> create pdf-file error: ', err)
             res.send(Promise.reject());
-        }
-        res.send(Promise.resolve());
-    });
-    console.log('>>> pdf file create succeed')
-    const mailOptions = {
-        from: EMAIL_FROM,
-        to: EMAIL_TO,
-        subject: 'Report from ',
-        text: 'hello',
-        // html: req.body,
-        attachments: [{
-            filename: 'invoice.pdf',
-            path: `${__dirname}/invoice.pdf`
-        }]
-    };
-    console.log('>>> mail option setting succeed')
-    
-    transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            console.log('>>> Error:', error);
-            return res.status(400).json(error);
         } else {
-            console.log('>>> Email sent:', info.response);
+            console.log('>>> pdf file create succeed')
+            const mailOptions = {
+                from: EMAIL_FROM,
+                to: EMAIL_TO,
+                subject: 'Report from ',
+                text: 'hello',
+                // attachments: [{
+                //     filename: 'report.pdf',
+                //     path: `${__dirname}/report.pdf`
+                // }]
+            };
+            console.log ('transporter ===>', transporter)
+            console.log('>>> mail option setting succeed')
+            transporter.sendMail(mailOptions, (error, info) => {
+                if (error) {
+                    console.log('>>> Error:', error);
+                    return res.status(400).json(error);
+                } else {
+                    console.log('>>> Email sent:', info.response);
+                }
+            });
         }
+
     });
+
+
 });
 
 
 app.post('/create-pdf', (req, res) => {
-    pdf.create(pdfTemplate(req.body), {}).toFile('invoice.pdf', (err) => {
+    pdf.create(pdfTemplate(req.body), options).toFile('report.pdf', (err) => {
         if (err) {
+            console.log('>>> create pdf-file error: ', err)
             res.send(Promise.reject());
         }
-        res.send(Promise.resolve());
+        else res.send(Promise.resolve());
     });
+    console.log('>>> pdf create succeed')
+    // conversion({ html: pdfTemplate(req.body), paperSize:{format:'A4'}}, function(err, pdf) {
+    //     var output = fs.createWriteStream('./invoice.pdf')
+    //     if (err) {
+    //         console.log('>>> create pdf-file error: ', err)
+    //         res.send({success: false});
+    //     } else {
+    //         pdf.stream.pipe(output);
+    //         res.send({success: true});
+    //     }
+    //   });
+
+
 });
 
 //SEND PDF INVOICE
 app.get('/fetch-pdf', (req, res) => {
-    res.sendFile(`${__dirname}/invoice.pdf`)
+    res.sendFile(`${__dirname}/report.pdf`)
 })
 
 app.get('/', (req, res) => {

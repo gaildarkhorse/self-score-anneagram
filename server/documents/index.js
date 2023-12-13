@@ -103,54 +103,19 @@ export default function (
     }
     //console.log('>>>>>> new init array   >>>>', initArray);
     const my_styles = `<style>
-    .invoice-container {
-        margin: auto;
-        padding-top: 10px;
-        font-family: 'Roboto', sans-serif;
-        margin: 0px auto;
-        }
+    .body {
+        margin: 20px;
+        padding-top: 5px;
+        font-family: 'Times New Roman', sans-serif;
+    }
     
     .header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 10px 5px;
+        padding: 5px 5px;
     }
 
-    .address {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 10px 0px 15px 0px;
-        line-height: 10px;
-        font-size: 12px;
-        margin-top: -20px
-    }
-    
-    .status {
-        text-align: right;
-    }
-
-    .receipt-id {
-        text-align: right;
-    }
-    
-    .title {
-        font-weight: 100px;
-        text-transform: uppercase;
-        color: gray;
-        letter-spacing: 2px;
-        font-size: 8px;
-        line-height: 5px;
-    }
-    
-    .summary {
-        margin-top: 2px;
-        margin-right: 0px;
-        margin-left: 50%;
-        margin-bottom: 15px;
-    }
     
     img {
         width: 100px;
@@ -160,79 +125,98 @@ export default function (
         border: 1px solid black;
         border-collapse: collapse;
         text-align: center;
-        backgroudColor: red;
-      }
+    }
       
     .h-0 {
-        width: 300px;
-        height: 50px;
+        width: 240px;
+        height: 20px;
+        font-size: 10px;
     }
       
     .h-1 {
         background: #FF2222;
-        width: 300px; 
-        height: 50px;
+        width: 240px; 
+        height: 20px;
+        font-size: 10px;
+
     }
     
     .h-2 {
         background: #FFFFFF;
-        width: 300px;
-        height: 50px;
+        width: 240px;
+        height: 20px;
+        font-size: 10px;
+
     }
     
     .h-3 {
         background: #00CC00;
-        width: 300px;
-        height: 50px;
+        width: 240px;
+        height: 20px;
+        font-size: 10px;
+
     }
       
     .c-0 {
         background: #FFFFFF;
-        width: 100px;
-        height: 30px;
+        width: 80px;
+        height: 20px;
+        font-size: 10px;
+
     }
       
     .c-1 {
         background: #CCCCEE;
-        width: 100px;
-        height: 30px;
+        width: 80px;
+        height: 20px;
+        font-size: 10px;
+
     }
     
     .c-2 {
         background: #FFCC00;
-        width: 100px;
-        height: 30px;
+        width: 8px;
+        height: 20px;
+        font-size: 10px;
+
     }
       
     .c-3 {
         background: #33FF33;
-        width: 100px;
-        height: 30px;
+        width: 80px;
+        height: 20px;
+        font-size: 10px;
+
     }
     
     .c-max{
         background: #00CC00;
-        width: 100px;
-        height: 40px;
+        width: 80px;
+        height: 20px;
+        font-size: 10px;
+
     }
     
     .c-min{
         background: #FF2222;
-        width: 100px;
-        height: 40px;
+        width: 80px;
+        height: 20px;
+        font-size: 10px;
+
     }
     
     .c-normal{
         background: #FFFFFF;
-        width: 100px;
-        height: 40px;
+        width: 80px;
+        height: 20px;
+        font-size: 10px;
+
     }
 
     </style>`;
 
-    let htmlHeader = `<!DOCTYPE html> <html><head></head><body><div class="invoice-container"><br>
-    <hr><br> <h2><center> TEST RESULT | VISUAL </center></h2><hr><br><br>`;
-    let htmlFooter = `<br><hr><br><center><h3>${date} | ${company.email}  |Hi:${hi_count} | Lo:${lo_count}</h3></center><br><hr><div>${notes}</div></div></body></html>`
+    let htmlHeader = `<!DOCTYPE html> <html><head></head><body><div class="invoice-container"><br><br><hr><h5><center> TEST RESULT | VISUAL </center></h5><hr><br>`;
+    let htmlFooter = `<br><hr><center><h6>${date} | ${company.email}  |Hi:${hi_count} | Lo:${lo_count}</h6></center><hr><div>${notes}</div></div></body></html>`
     let colorArray = initArray;
     let indexArray = [0, 1, 2, 3, 4, 5, 6, 7, 8];
     const Max_length = 16;
@@ -395,6 +379,7 @@ export default function (
     let table1_Text = table1_header + firstRow1 + table1_body + table1_footer;
     let table2_Text = table2_header + firstRow2 + table2_body + table2_footer;
     let htmlText = table1_Text + divider + table2_Text;
-    let html_total = htmlHeader + my_styles + htmlText + htmlFooter;
-    return (html_total);
+    let html_total = htmlHeader + my_styles  + htmlText + htmlFooter;
+    //console.log(html_total);
+    return html_total;
 };

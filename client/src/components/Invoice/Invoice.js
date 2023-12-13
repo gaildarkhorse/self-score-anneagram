@@ -75,8 +75,8 @@ const Invoice = () => {
     const data = require('../../config/data.json');
 
     let initArray = Array.from({ length: 72 }, () => 0);
-    const [limitCount, setLimitCount] = useState(0);
-    const [totalCount, setTotalCount] = useState(0);
+    const [limitCount, setLimitCount] = useState(invoice? invoice.limitCount : 0);
+    const [totalCount, setTotalCount] = useState(invoice ? invoice.totalCount : 0);
     const [quizState, updateQuizState] = useState(invoice ? invoice.quizState : initArray);
 
     const optionClickOne = (question) => {

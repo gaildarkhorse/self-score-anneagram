@@ -22,10 +22,7 @@ import Reset from './components/Password/Reset'
 function App() {
 
   const user = JSON.parse(localStorage.getItem('profile'))
-  const data = require('./config/data.json');
-  localStorage.setItem('data', JSON.stringify({...data}))
-  const newData = JSON.parse(localStorage.getItem('data'));
-  console.log('NewData At First >>>>>>>>>>>>>>', newData)
+
   return (
     <div>
       <BrowserRouter>
